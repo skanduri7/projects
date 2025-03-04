@@ -63,9 +63,6 @@ Each project contains specific build instructions. Navigate to a project directo
 
 Example for optimized-convolutions:
 
-bash
-Copy
-Edit
 cd optimized-convolutions
 make
 ./run_convolution
