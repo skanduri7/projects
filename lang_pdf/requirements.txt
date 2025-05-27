@@ -1,0 +1,22 @@
+# --- UI & RAG Framework ---
+streamlit==1.34.0                # UI
+langchain==0.1.14                # Core LLM/RAG framework
+langchain-community==0.0.36      # Updated for latest loaders/vectorstores
+langchain-openai==0.1.7          # Embeddings + GPT chat models
+
+# --- Embeddings & Tokenization ---
+faiss-cpu==1.8.0                 # Vector index
+tiktoken==0.6.0                  # Tokenizer used by LangChain
+openai==1.30.2                   # OpenAI SDK (chat, embeddings, billing)
+python-dotenv==1.0.1             # Read OPENAI_API_KEY from .env
+
+# --- PDF Handling ---
+PyPDF2==3.0.1                    # Fallback / utils
+pymupdf==1.24.1                  # For image extraction from PDFs (via fitz)
+
+# --- CLIP Image Embeddings ---
+torch==2.2.2                     # PyTorch (CPU or GPU)
+torchvision==0.17.2              # Image preprocessing
+ftfy==6.1.1                      # Required by CLIP
+regex==2023.12.25                # Required by CLIP
+git+https://github.com/openai/CLIP.git  # OpenAI’s CLIP model
