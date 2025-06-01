@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D89F6C82DEBFF65000CCC15 /* tracker.py in Resources */ = {isa = PBXBuildFile; fileRef = 4D89F6C22DEBFF65000CCC15 /* tracker.py */; };
+		4D89F6C92DEBFF65000CCC15 /* WebcamOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89F6BD2DEBFF65000CCC15 /* WebcamOverlayView.swift */; };
+		4D89F6CA2DEBFF65000CCC15 /* CanvasState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89F6C42DEBFF65000CCC15 /* CanvasState.swift */; };
+		4D89F6CB2DEBFF65000CCC15 /* TransparentOverlayWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89F6BC2DEBFF65000CCC15 /* TransparentOverlayWindow.swift */; };
+		4D89F6CC2DEBFF65000CCC15 /* AirBoardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89F6B92DEBFF65000CCC15 /* AirBoardApp.swift */; };
+		4D89F6CD2DEBFF65000CCC15 /* HandTrackingBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89F6BF2DEBFF65000CCC15 /* HandTrackingBridge.swift */; };
+		4D89F6CE2DEBFF65000CCC15 /* TrackerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89F6C02DEBFF65000CCC15 /* TrackerClient.swift */; };
+		4D89F6D02DEBFF65000CCC15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89F6BB2DEBFF65000CCC15 /* ContentView.swift */; };
+		4D89F6D12DEBFF65000CCC15 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89F6BA2DEBFF65000CCC15 /* CanvasView.swift */; };
+		4D89F6D52DEC19DC000CCC15 /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89F6D42DEC19D7000CCC15 /* CameraModel.swift */; };
+		4D89F6D72DEC1A05000CCC15 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89F6D62DEC19FF000CCC15 /* CameraPreview.swift */; };
+		4D89F6D92DEC2288000CCC15 /* Drawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89F6D82DEC2285000CCC15 /* Drawable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D89F6812DEBF999000CCC15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D89F6672DEBF996000CCC15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D89F66E2DEBF996000CCC15;
+			remoteInfo = AirboardXcode;
+		};
+		4D89F68B2DEBF999000CCC15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D89F6672DEBF996000CCC15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D89F66E2DEBF996000CCC15;
+			remoteInfo = AirboardXcode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D89F66F2DEBF996000CCC15 /* AirboardXcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirboardXcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D89F6802DEBF999000CCC15 /* AirboardXcodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirboardXcodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D89F68A2DEBF999000CCC15 /* AirboardXcodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirboardXcodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D89F6B92DEBFF65000CCC15 /* AirBoardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirBoardApp.swift; sourceTree = "<group>"; };
+		4D89F6BA2DEBFF65000CCC15 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		4D89F6BB2DEBFF65000CCC15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4D89F6BC2DEBFF65000CCC15 /* TransparentOverlayWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentOverlayWindow.swift; sourceTree = "<group>"; };
+		4D89F6BD2DEBFF65000CCC15 /* WebcamOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebcamOverlayView.swift; sourceTree = "<group>"; };
+		4D89F6BF2DEBFF65000CCC15 /* HandTrackingBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandTrackingBridge.swift; sourceTree = "<group>"; };
+		4D89F6C02DEBFF65000CCC15 /* TrackerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerClient.swift; sourceTree = "<group>"; };
+		4D89F6C22DEBFF65000CCC15 /* tracker.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = tracker.py; sourceTree = "<group>"; };
+		4D89F6C42DEBFF65000CCC15 /* CanvasState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasState.swift; sourceTree = "<group>"; };
+		4D89F6D42DEC19D7000CCC15 /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
+		4D89F6D62DEC19FF000CCC15 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		4D89F6D82DEC2285000CCC15 /* Drawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawable.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4D89F6712DEBF996000CCC15 /* AirboardXcode */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AirboardXcode;
+			sourceTree = "<group>";
+		};
+		4D89F6832DEBF999000CCC15 /* AirboardXcodeTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AirboardXcodeTests;
+			sourceTree = "<group>";
+		};
+		4D89F68D2DEBF999000CCC15 /* AirboardXcodeUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AirboardXcodeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D89F66C2DEBF996000CCC15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D89F67D2DEBF999000CCC15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D89F6872DEBF999000CCC15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D89F6662DEBF996000CCC15 = {
+			isa = PBXGroup;
+			children = (
+				4D89F6C72DEBFF65000CCC15 /* AirBoard */,
+				4D89F6712DEBF996000CCC15 /* AirboardXcode */,
+				4D89F6832DEBF999000CCC15 /* AirboardXcodeTests */,
+				4D89F68D2DEBF999000CCC15 /* AirboardXcodeUITests */,
+				4D89F6702DEBF996000CCC15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D89F6702DEBF996000CCC15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D89F66F2DEBF996000CCC15 /* AirboardXcode.app */,
+				4D89F6802DEBF999000CCC15 /* AirboardXcodeTests.xctest */,
+				4D89F68A2DEBF999000CCC15 /* AirboardXcodeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D89F6BE2DEBFF65000CCC15 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4D89F6D62DEC19FF000CCC15 /* CameraPreview.swift */,
+				4D89F6D42DEC19D7000CCC15 /* CameraModel.swift */,
+				4D89F6B92DEBFF65000CCC15 /* AirBoardApp.swift */,
+				4D89F6BA2DEBFF65000CCC15 /* CanvasView.swift */,
+				4D89F6BB2DEBFF65000CCC15 /* ContentView.swift */,
+				4D89F6BC2DEBFF65000CCC15 /* TransparentOverlayWindow.swift */,
+				4D89F6BD2DEBFF65000CCC15 /* WebcamOverlayView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4D89F6C12DEBFF65000CCC15 /* Bridging */ = {
+			isa = PBXGroup;
+			children = (
+				4D89F6BF2DEBFF65000CCC15 /* HandTrackingBridge.swift */,
+				4D89F6C02DEBFF65000CCC15 /* TrackerClient.swift */,
+			);
+			path = Bridging;
+			sourceTree = "<group>";
+		};
+		4D89F6C32DEBFF65000CCC15 /* HandTracking */ = {
+			isa = PBXGroup;
+			children = (
+				4D89F6C22DEBFF65000CCC15 /* tracker.py */,
+			);
+			path = HandTracking;
+			sourceTree = "<group>";
+		};
+		4D89F6C62DEBFF65000CCC15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D89F6D82DEC2285000CCC15 /* Drawable.swift */,
+				4D89F6C42DEBFF65000CCC15 /* CanvasState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4D89F6C72DEBFF65000CCC15 /* AirBoard */ = {
+			isa = PBXGroup;
+			children = (
+				4D89F6BE2DEBFF65000CCC15 /* App */,
+				4D89F6C12DEBFF65000CCC15 /* Bridging */,
+				4D89F6C32DEBFF65000CCC15 /* HandTracking */,
+				4D89F6C62DEBFF65000CCC15 /* Models */,
+			);
+			path = AirBoard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D89F66E2DEBF996000CCC15 /* AirboardXcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D89F6942DEBF999000CCC15 /* Build configuration list for PBXNativeTarget "AirboardXcode" */;
+			buildPhases = (
+				4D89F66B2DEBF996000CCC15 /* Sources */,
+				4D89F66C2DEBF996000CCC15 /* Frameworks */,
+				4D89F66D2DEBF996000CCC15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4D89F6712DEBF996000CCC15 /* AirboardXcode */,
+			);
+			name = AirboardXcode;
+			packageProductDependencies = (
+			);
+			productName = AirboardXcode;
+			productReference = 4D89F66F2DEBF996000CCC15 /* AirboardXcode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D89F67F2DEBF999000CCC15 /* AirboardXcodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D89F6972DEBF999000CCC15 /* Build configuration list for PBXNativeTarget "AirboardXcodeTests" */;
+			buildPhases = (
+				4D89F67C2DEBF999000CCC15 /* Sources */,
+				4D89F67D2DEBF999000CCC15 /* Frameworks */,
+				4D89F67E2DEBF999000CCC15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D89F6822DEBF999000CCC15 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4D89F6832DEBF999000CCC15 /* AirboardXcodeTests */,
+			);
+			name = AirboardXcodeTests;
+			packageProductDependencies = (
+			);
+			productName = AirboardXcodeTests;
+			productReference = 4D89F6802DEBF999000CCC15 /* AirboardXcodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4D89F6892DEBF999000CCC15 /* AirboardXcodeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D89F69A2DEBF999000CCC15 /* Build configuration list for PBXNativeTarget "AirboardXcodeUITests" */;
+			buildPhases = (
+				4D89F6862DEBF999000CCC15 /* Sources */,
+				4D89F6872DEBF999000CCC15 /* Frameworks */,
+				4D89F6882DEBF999000CCC15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D89F68C2DEBF999000CCC15 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4D89F68D2DEBF999000CCC15 /* AirboardXcodeUITests */,
+			);
+			name = AirboardXcodeUITests;
+			packageProductDependencies = (
+			);
+			productName = AirboardXcodeUITests;
+			productReference = 4D89F68A2DEBF999000CCC15 /* AirboardXcodeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D89F6672DEBF996000CCC15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					4D89F66E2DEBF996000CCC15 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					4D89F67F2DEBF999000CCC15 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 4D89F66E2DEBF996000CCC15;
+					};
+					4D89F6892DEBF999000CCC15 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 4D89F66E2DEBF996000CCC15;
+					};
+				};
+			};
+			buildConfigurationList = 4D89F66A2DEBF996000CCC15 /* Build configuration list for PBXProject "AirboardXcode" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D89F6662DEBF996000CCC15;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4D89F6702DEBF996000CCC15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D89F66E2DEBF996000CCC15 /* AirboardXcode */,
+				4D89F67F2DEBF999000CCC15 /* AirboardXcodeTests */,
+				4D89F6892DEBF999000CCC15 /* AirboardXcodeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D89F66D2DEBF996000CCC15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D89F6C82DEBFF65000CCC15 /* tracker.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D89F67E2DEBF999000CCC15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D89F6882DEBF999000CCC15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D89F66B2DEBF996000CCC15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D89F6C92DEBFF65000CCC15 /* WebcamOverlayView.swift in Sources */,
+				4D89F6CA2DEBFF65000CCC15 /* CanvasState.swift in Sources */,
+				4D89F6D52DEC19DC000CCC15 /* CameraModel.swift in Sources */,
+				4D89F6D92DEC2288000CCC15 /* Drawable.swift in Sources */,
+				4D89F6CB2DEBFF65000CCC15 /* TransparentOverlayWindow.swift in Sources */,
+				4D89F6CC2DEBFF65000CCC15 /* AirBoardApp.swift in Sources */,
+				4D89F6CD2DEBFF65000CCC15 /* HandTrackingBridge.swift in Sources */,
+				4D89F6D72DEC1A05000CCC15 /* CameraPreview.swift in Sources */,
+				4D89F6CE2DEBFF65000CCC15 /* TrackerClient.swift in Sources */,
+				4D89F6D02DEBFF65000CCC15 /* ContentView.swift in Sources */,
+				4D89F6D12DEBFF65000CCC15 /* CanvasView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D89F67C2DEBF999000CCC15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D89F6862DEBF999000CCC15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D89F6822DEBF999000CCC15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D89F66E2DEBF996000CCC15 /* AirboardXcode */;
+			targetProxy = 4D89F6812DEBF999000CCC15 /* PBXContainerItemProxy */;
+		};
+		4D89F68C2DEBF999000CCC15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D89F66E2DEBF996000CCC15 /* AirboardXcode */;
+			targetProxy = 4D89F68B2DEBF999000CCC15 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4D89F6922DEBF999000CCC15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D89F6932DEBF999000CCC15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		4D89F6952DEBF999000CCC15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AirboardXcode/AirboardXcode.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AirboardXcode/Preview Content\"";
+				DEVELOPMENT_TEAM = TT654W7JN6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AirboardXcode/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera for hand tracking.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skanduri7.AirboardXcode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4D89F6962DEBF999000CCC15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AirboardXcode/AirboardXcode.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AirboardXcode/Preview Content\"";
+				DEVELOPMENT_TEAM = TT654W7JN6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AirboardXcode/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera for hand tracking.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skanduri7.AirboardXcode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4D89F6982DEBF999000CCC15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TT654W7JN6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skanduri7.AirboardXcodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirboardXcode.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AirboardXcode";
+			};
+			name = Debug;
+		};
+		4D89F6992DEBF999000CCC15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TT654W7JN6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skanduri7.AirboardXcodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirboardXcode.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AirboardXcode";
+			};
+			name = Release;
+		};
+		4D89F69B2DEBF999000CCC15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TT654W7JN6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skanduri7.AirboardXcodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = AirboardXcode;
+			};
+			name = Debug;
+		};
+		4D89F69C2DEBF999000CCC15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TT654W7JN6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skanduri7.AirboardXcodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = AirboardXcode;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D89F66A2DEBF996000CCC15 /* Build configuration list for PBXProject "AirboardXcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D89F6922DEBF999000CCC15 /* Debug */,
+				4D89F6932DEBF999000CCC15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D89F6942DEBF999000CCC15 /* Build configuration list for PBXNativeTarget "AirboardXcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D89F6952DEBF999000CCC15 /* Debug */,
+				4D89F6962DEBF999000CCC15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D89F6972DEBF999000CCC15 /* Build configuration list for PBXNativeTarget "AirboardXcodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D89F6982DEBF999000CCC15 /* Debug */,
+				4D89F6992DEBF999000CCC15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D89F69A2DEBF999000CCC15 /* Build configuration list for PBXNativeTarget "AirboardXcodeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D89F69B2DEBF999000CCC15 /* Debug */,
+				4D89F69C2DEBF999000CCC15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D89F6672DEBF996000CCC15 /* Project object */;
+}
