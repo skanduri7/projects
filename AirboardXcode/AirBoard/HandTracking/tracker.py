@@ -48,15 +48,10 @@ try:
         
         pen_down = False
         x, y = None, None
+        left_x, left_y = None, None
+        left_pinch = None
 
-#        if results.multi_hand_landmarks:
-#            for hand_landmarks in results.multi_hand_landmarks:
-#
-#                # index finger tip coordinates
-#                x = hand_landmarks.landmark[8].x
-#                y = hand_landmarks.landmark[8].y
-#                data = json.dumps({'x': x, 'y': y})
-#                conn.sendall(data.encode('utf-8'))
+
         if results.multi_hand_landmarks and results.multi_handedness:
             # We’ll look for the RIGHT hand specifically
             for hand_landmarks, handedness in zip(results.multi_hand_landmarks,
@@ -76,16 +71,22 @@ try:
                     if d1 < PINCH_THRESHOLD and d2 < PINCH_THRESHOLD and d3 < PINCH_THRESHOLD:
                         pen_down = True
                         x, y = index_tip.x, index_tip.y
-                    break  # only use first right hand
+                elif label == "Left":
+                    lm = hand_landmarks.landmark
+                    thumb_tip  = lm[4]
+                    index_tip  = lm[8]
+
+                    left_x = index_tip.x
+                    left_y = index_tip.y
+                    left_pinch = distance(thumb_tip, index_tip)
                     
         if pen_down:
-            data = {'down': True, 'x': x, 'y': y}
+            data = {'down': True, 'x': x, 'y': y, 'lx': left_x, 'ly': left_y, 'lpinch': left_pinch}
         else:
-            # Only send an “up” event once when we transition
             if prev_pen_down:
-                data = {'down': False}
+                data = {'down': False, 'lx': left_x, 'ly': left_y, 'lpinch': left_pinch}
             else:
-                data = None
+                data = {'lx': left_x, 'ly': left_y,'lpinch': left_pinch}
 
         if data:
             conn.sendall(json.dumps(data).encode('utf-8'))

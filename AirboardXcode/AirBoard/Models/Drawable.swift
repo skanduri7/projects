@@ -16,13 +16,12 @@ struct Symbol: Identifiable {
 
 struct Stroke: Identifiable, Equatable {
     let id = UUID()
-    var points: [CGPoint] = []
+    var rawPoints: [CGPoint] = []
+    var smoothedPoints: [CGPoint] = []
     var color: Color = .white
     var lineWidth: CGFloat = 2.0
-
-    mutating func addPoint(_ point: CGPoint) {
-        points.append(point)
-    }
+    
+    var points: [CGPoint] { rawPoints }
 
     static func == (lhs: Stroke, rhs: Stroke) -> Bool {
         lhs.id == rhs.id

@@ -12,7 +12,6 @@
 		4D89F6CA2DEBFF65000CCC15 /* CanvasState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89F6C42DEBFF65000CCC15 /* CanvasState.swift */; };
 		4D89F6CB2DEBFF65000CCC15 /* TransparentOverlayWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89F6BC2DEBFF65000CCC15 /* TransparentOverlayWindow.swift */; };
 		4D89F6CC2DEBFF65000CCC15 /* AirBoardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89F6B92DEBFF65000CCC15 /* AirBoardApp.swift */; };
-		4D89F6CD2DEBFF65000CCC15 /* HandTrackingBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89F6BF2DEBFF65000CCC15 /* HandTrackingBridge.swift */; };
 		4D89F6CE2DEBFF65000CCC15 /* TrackerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89F6C02DEBFF65000CCC15 /* TrackerClient.swift */; };
 		4D89F6D02DEBFF65000CCC15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89F6BB2DEBFF65000CCC15 /* ContentView.swift */; };
 		4D89F6D12DEBFF65000CCC15 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89F6BA2DEBFF65000CCC15 /* CanvasView.swift */; };
@@ -47,7 +46,6 @@
 		4D89F6BB2DEBFF65000CCC15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4D89F6BC2DEBFF65000CCC15 /* TransparentOverlayWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentOverlayWindow.swift; sourceTree = "<group>"; };
 		4D89F6BD2DEBFF65000CCC15 /* WebcamOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebcamOverlayView.swift; sourceTree = "<group>"; };
-		4D89F6BF2DEBFF65000CCC15 /* HandTrackingBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandTrackingBridge.swift; sourceTree = "<group>"; };
 		4D89F6C02DEBFF65000CCC15 /* TrackerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerClient.swift; sourceTree = "<group>"; };
 		4D89F6C22DEBFF65000CCC15 /* tracker.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = tracker.py; sourceTree = "<group>"; };
 		4D89F6C42DEBFF65000CCC15 /* CanvasState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasState.swift; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 		4D89F6C12DEBFF65000CCC15 /* Bridging */ = {
 			isa = PBXGroup;
 			children = (
-				4D89F6BF2DEBFF65000CCC15 /* HandTrackingBridge.swift */,
 				4D89F6C02DEBFF65000CCC15 /* TrackerClient.swift */,
 			);
 			path = Bridging;
@@ -322,7 +319,6 @@
 				4D89F6D92DEC2288000CCC15 /* Drawable.swift in Sources */,
 				4D89F6CB2DEBFF65000CCC15 /* TransparentOverlayWindow.swift in Sources */,
 				4D89F6CC2DEBFF65000CCC15 /* AirBoardApp.swift in Sources */,
-				4D89F6CD2DEBFF65000CCC15 /* HandTrackingBridge.swift in Sources */,
 				4D89F6D72DEC1A05000CCC15 /* CameraPreview.swift in Sources */,
 				4D89F6CE2DEBFF65000CCC15 /* TrackerClient.swift in Sources */,
 				4D89F6D02DEBFF65000CCC15 /* ContentView.swift in Sources */,

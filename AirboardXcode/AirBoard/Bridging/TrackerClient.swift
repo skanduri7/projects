@@ -8,6 +8,9 @@ final class TrackerClient: ObservableObject {
 
     @Published var fingertipPosition: CGPoint = .zero
     @Published var isPenDown: Bool = false
+    
+    @Published var leftHandPosition: CGPoint? = nil
+    @Published var leftHandPinchDistance: CGFloat? = nil
 
     private var connection: NWConnection?
     private let queue = DispatchQueue(label: "TrackerClientQueue")
@@ -44,6 +47,18 @@ final class TrackerClient: ObservableObject {
                     if down, let x = dict["x"] as? Double, let y = dict["y"] as? Double {
                         self.fingertipPosition = CGPoint(x: x, y: y)
                     }
+                }
+                
+                if let lx = dict["lx"] as? Double, let ly = dict["ly"] as? Double {
+                    self.leftHandPosition = CGPoint(x: lx, y: ly)
+                } else {
+                    self.leftHandPosition = nil
+                }
+
+                if let lpinch = dict["lpinch"] as? Double {
+                    self.leftHandPinchDistance = CGFloat(lpinch)
+                } else {
+                    self.leftHandPinchDistance = nil
                 }
             }
             self.receiveData()
