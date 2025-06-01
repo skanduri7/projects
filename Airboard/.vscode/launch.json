@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Airboard}",
+            "name": "Debug Airboard",
+            "program": "${workspaceFolder:Airboard}/.build/debug/Airboard",
+            "preLaunchTask": "swift: Build Debug Airboard"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Airboard}",
+            "name": "Release Airboard",
+            "program": "${workspaceFolder:Airboard}/.build/release/Airboard",
+            "preLaunchTask": "swift: Build Release Airboard"
+        }
+    ]
+}
