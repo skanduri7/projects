@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		4DC776AA2E0BBD9900BFB9C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DC776902E0BBD9700BFB9C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DC776972E0BBD9700BFB9C6;
+			remoteInfo = TeddyApp;
+		};
+		4DC776B42E0BBD9900BFB9C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DC776902E0BBD9700BFB9C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DC776972E0BBD9700BFB9C6;
+			remoteInfo = TeddyApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4DC776982E0BBD9700BFB9C6 /* TeddyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeddyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC776A92E0BBD9900BFB9C6 /* TeddyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeddyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC776B32E0BBD9900BFB9C6 /* TeddyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeddyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4DC776E42E0BE8DE00BFB9C6 /* Exceptions for "TeddyApp" folder in "TeddyApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 4DC776972E0BBD9700BFB9C6 /* TeddyApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4DC7769A2E0BBD9700BFB9C6 /* TeddyApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4DC776E42E0BE8DE00BFB9C6 /* Exceptions for "TeddyApp" folder in "TeddyApp" target */,
+			);
+			path = TeddyApp;
+			sourceTree = "<group>";
+		};
+		4DC776AC2E0BBD9900BFB9C6 /* TeddyAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TeddyAppTests;
+			sourceTree = "<group>";
+		};
+		4DC776B62E0BBD9900BFB9C6 /* TeddyAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TeddyAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DC776952E0BBD9700BFB9C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC776A62E0BBD9900BFB9C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC776B02E0BBD9900BFB9C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DC7768F2E0BBD9700BFB9C6 = {
+			isa = PBXGroup;
+			children = (
+				4DC7769A2E0BBD9700BFB9C6 /* TeddyApp */,
+				4DC776AC2E0BBD9900BFB9C6 /* TeddyAppTests */,
+				4DC776B62E0BBD9900BFB9C6 /* TeddyAppUITests */,
+				4DC776992E0BBD9700BFB9C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DC776992E0BBD9700BFB9C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DC776982E0BBD9700BFB9C6 /* TeddyApp.app */,
+				4DC776A92E0BBD9900BFB9C6 /* TeddyAppTests.xctest */,
+				4DC776B32E0BBD9900BFB9C6 /* TeddyAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DC776972E0BBD9700BFB9C6 /* TeddyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DC776BD2E0BBD9900BFB9C6 /* Build configuration list for PBXNativeTarget "TeddyApp" */;
+			buildPhases = (
+				4DC776942E0BBD9700BFB9C6 /* Sources */,
+				4DC776952E0BBD9700BFB9C6 /* Frameworks */,
+				4DC776962E0BBD9700BFB9C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4DC7769A2E0BBD9700BFB9C6 /* TeddyApp */,
+			);
+			name = TeddyApp;
+			packageProductDependencies = (
+			);
+			productName = TeddyApp;
+			productReference = 4DC776982E0BBD9700BFB9C6 /* TeddyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DC776A82E0BBD9900BFB9C6 /* TeddyAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DC776C02E0BBD9900BFB9C6 /* Build configuration list for PBXNativeTarget "TeddyAppTests" */;
+			buildPhases = (
+				4DC776A52E0BBD9900BFB9C6 /* Sources */,
+				4DC776A62E0BBD9900BFB9C6 /* Frameworks */,
+				4DC776A72E0BBD9900BFB9C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DC776AB2E0BBD9900BFB9C6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4DC776AC2E0BBD9900BFB9C6 /* TeddyAppTests */,
+			);
+			name = TeddyAppTests;
+			packageProductDependencies = (
+			);
+			productName = TeddyAppTests;
+			productReference = 4DC776A92E0BBD9900BFB9C6 /* TeddyAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4DC776B22E0BBD9900BFB9C6 /* TeddyAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DC776C32E0BBD9900BFB9C6 /* Build configuration list for PBXNativeTarget "TeddyAppUITests" */;
+			buildPhases = (
+				4DC776AF2E0BBD9900BFB9C6 /* Sources */,
+				4DC776B02E0BBD9900BFB9C6 /* Frameworks */,
+				4DC776B12E0BBD9900BFB9C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DC776B52E0BBD9900BFB9C6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4DC776B62E0BBD9900BFB9C6 /* TeddyAppUITests */,
+			);
+			name = TeddyAppUITests;
+			packageProductDependencies = (
+			);
+			productName = TeddyAppUITests;
+			productReference = 4DC776B32E0BBD9900BFB9C6 /* TeddyAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DC776902E0BBD9700BFB9C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					4DC776972E0BBD9700BFB9C6 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					4DC776A82E0BBD9900BFB9C6 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 4DC776972E0BBD9700BFB9C6;
+					};
+					4DC776B22E0BBD9900BFB9C6 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 4DC776972E0BBD9700BFB9C6;
+					};
+				};
+			};
+			buildConfigurationList = 4DC776932E0BBD9700BFB9C6 /* Build configuration list for PBXProject "TeddyApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DC7768F2E0BBD9700BFB9C6;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4DC776992E0BBD9700BFB9C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DC776972E0BBD9700BFB9C6 /* TeddyApp */,
+				4DC776A82E0BBD9900BFB9C6 /* TeddyAppTests */,
+				4DC776B22E0BBD9900BFB9C6 /* TeddyAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DC776962E0BBD9700BFB9C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC776A72E0BBD9900BFB9C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC776B12E0BBD9900BFB9C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DC776942E0BBD9700BFB9C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC776A52E0BBD9900BFB9C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC776AF2E0BBD9900BFB9C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DC776AB2E0BBD9900BFB9C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DC776972E0BBD9700BFB9C6 /* TeddyApp */;
+			targetProxy = 4DC776AA2E0BBD9900BFB9C6 /* PBXContainerItemProxy */;
+		};
+		4DC776B52E0BBD9900BFB9C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DC776972E0BBD9700BFB9C6 /* TeddyApp */;
+			targetProxy = 4DC776B42E0BBD9900BFB9C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4DC776BB2E0BBD9900BFB9C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4DC776BC2E0BBD9900BFB9C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		4DC776BE2E0BBD9900BFB9C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TeddyApp/TeddyApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TeddyApp/Preview Content\"";
+				DEVELOPMENT_TEAM = TT654W7JN6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TeddyApp/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "\"Needed so TeddyApp can read on-screen accessibility data.\"";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"Teddy needs audio to listen for 'Hey Teddy'\"";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "\"Teddy needs audio to listen for 'Hey Teddy'\"";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skanduri7.TeddyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4DC776BF2E0BBD9900BFB9C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TeddyApp/TeddyApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TeddyApp/Preview Content\"";
+				DEVELOPMENT_TEAM = TT654W7JN6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TeddyApp/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "\"Needed so TeddyApp can read on-screen accessibility data.\"";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"Teddy needs audio to listen for 'Hey Teddy'\"";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "\"Teddy needs audio to listen for 'Hey Teddy'\"";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skanduri7.TeddyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4DC776C12E0BBD9900BFB9C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TT654W7JN6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skanduri7.TeddyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeddyApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TeddyApp";
+			};
+			name = Debug;
+		};
+		4DC776C22E0BBD9900BFB9C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TT654W7JN6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skanduri7.TeddyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeddyApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TeddyApp";
+			};
+			name = Release;
+		};
+		4DC776C42E0BBD9900BFB9C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TT654W7JN6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skanduri7.TeddyAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = TeddyApp;
+			};
+			name = Debug;
+		};
+		4DC776C52E0BBD9900BFB9C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TT654W7JN6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skanduri7.TeddyAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = TeddyApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DC776932E0BBD9700BFB9C6 /* Build configuration list for PBXProject "TeddyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC776BB2E0BBD9900BFB9C6 /* Debug */,
+				4DC776BC2E0BBD9900BFB9C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DC776BD2E0BBD9900BFB9C6 /* Build configuration list for PBXNativeTarget "TeddyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC776BE2E0BBD9900BFB9C6 /* Debug */,
+				4DC776BF2E0BBD9900BFB9C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DC776C02E0BBD9900BFB9C6 /* Build configuration list for PBXNativeTarget "TeddyAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC776C12E0BBD9900BFB9C6 /* Debug */,
+				4DC776C22E0BBD9900BFB9C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DC776C32E0BBD9900BFB9C6 /* Build configuration list for PBXNativeTarget "TeddyAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC776C42E0BBD9900BFB9C6 /* Debug */,
+				4DC776C52E0BBD9900BFB9C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DC776902E0BBD9700BFB9C6 /* Project object */;
+}
