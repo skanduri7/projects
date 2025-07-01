@@ -16,7 +16,7 @@ STATE_FILE = "agent_state.json"
 LOG_FILE = "thought_log.jsonl"
 
 SHORT_MEMORY_TURNS = 5
-HISTORY_LIMIT = 25
+HISTORY_LIMIT = 10
 
 with open("system_prompt.txt", "r") as f:
     SYSTEM_PROMPT = f.read().strip() + "\n"
@@ -24,6 +24,7 @@ with open("system_prompt.txt", "r") as f:
 # Initialize model and tokenizer
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, trust_remote_code=True)
 model = AutoModelForCausalLM.from_pretrained(MODEL_NAME, torch_dtype=torch.float16, device_map="auto")
+model.eval()
 
 def load_state():
     if os.path.exists(STATE_FILE):
@@ -86,7 +87,7 @@ def ask_model(prompt_text):
         {"role": "user", "content": prompt_text}
     ]
     input_ids = tokenizer.apply_chat_template(messages, return_tensors="pt").to(model.device)
-    outputs = model.generate(input_ids, max_new_tokens=1024, temperature=0.9, top_p=0.9, do_sample=True)
+    outputs = model.generate(input_ids, max_new_tokens=768, temperature=0.9, top_p=0.9, do_sample=True)
     return tokenizer.decode(outputs[0], skip_special_tokens=True)
 
 def main():
