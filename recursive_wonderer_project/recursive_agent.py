@@ -15,6 +15,9 @@ MODEL_NAME = "microsoft/Phi-4-reasoning-plus"
 STATE_FILE = "agent_state.json"
 LOG_FILE = "thought_log.jsonl"
 
+SHORT_MEMORY_TURNS = 5
+HISTORY_LIMIT = 25
+
 with open("system_prompt.txt", "r") as f:
     SYSTEM_PROMPT = f.read().strip() + "\n"
 
@@ -24,9 +27,12 @@ model = AutoModelForCausalLM.from_pretrained(MODEL_NAME, torch_dtype=torch.float
 
 def load_state():
     if os.path.exists(STATE_FILE):
-        with open(STATE_FILE, "r") as f:
-            return json.load(f)
-    return {"iteration": 0, "current_input": "What happens when we listen to silence?"}
+        state = json.load(open(STATE_FILE))
+        # ensure new fields exist
+        state.setdefault("history", [])
+        state.setdefault("long_term_memory", "")
+        return state
+    return {"iteration": 0, "current_input": "What happens when we listen to silence?", "history": [], "long_term_memory": ""}
 
 def save_state(state):
     with open(STATE_FILE, "w") as f:
@@ -62,6 +68,16 @@ def run_search(query):
         return summary
     except Exception as e:
         return f"[Error performing search: {e}]"
+    
+def summarize_memory(turns: list[str]) -> str:
+    """
+    Condense a list of dialogue strings into a single paragraph summary.
+    """
+    prompt = (
+        "You are a concise summarizer. Summarize the following dialogue into one paragraph capturing the user's preferences, goals, and key context:\n\n"
+        + "\n".join(turns)
+    )
+    return ask_model(prompt)
 
 
 def ask_model(prompt):
@@ -74,9 +90,20 @@ def main():
     while True:
         prompt = state["current_input"]
         print(f"\nIteration {state['iteration']} | Prompt:\n{prompt}\n")
-        response = ask_model(prompt)
-        print("Model response:\n", response)
 
+        # Build full prompt with memory
+        parts = []
+        if state['long_term_memory']:
+            parts.append(f"Long-term memory:\n{state['long_term_memory']}\n")
+        if state['history']:
+            recent = state['history'][-SHORT_MEMORY_TURNS:]
+            parts.append("Recent history:\n" + "\n".join(recent) + "\n")
+        parts.append(f"Current question:\n{prompt}\n")
+        full_prompt = "".join(parts)
+
+        # Ask model
+        response = ask_model(full_prompt)
+        print("Model response:\n", response)
         append_log(prompt, response)
 
         # Handle code experiments
@@ -93,15 +120,23 @@ def main():
             print("\nTool Output (search):\n", results)
             response += f"\n\n[Search Results]\n{results}"
 
+        # Update memory: append this round
+        state['history'].append(f"User: {prompt}")
+        state['history'].append(f"Assistant: {response}")
+        # If history too long, summarize oldest into long-term
+        if len(state['history']) > HISTORY_LIMIT * 2:
+            excess = state['history'][:-HISTORY_LIMIT*2]
+            summary = summarize_memory(excess)
+            state['long_term_memory'] = (state['long_term_memory'] + "\n" + summary).strip()
+            state['history'] = state['history'][-HISTORY_LIMIT*2:]
+
         # Determine next prompt
         next_step = extract_block(response, "next") or "Keep wondering about something new."
-        state.update({
-            "iteration": state["iteration"] + 1,
-            "current_input": next_step
-        })
+        state.update({"iteration": state['iteration'] + 1, "current_input": next_step})
         save_state(state)
 
         time.sleep(1.0)
+
 
 if __name__ == "__main__":
     main()
