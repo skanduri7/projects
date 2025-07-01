@@ -8,6 +8,7 @@ import tempfile
 import re
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
+import argparse
 from duckduckgo_search import DDGS
 
 # Configuration
@@ -91,6 +92,12 @@ def ask_model(prompt_text):
     return tokenizer.decode(outputs[0], skip_special_tokens=True)
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--reset", action="store_true", help="wipe out previous state and start from scratch")
+    args = parser.parse_args()
+
+    if args.reset and os.path.exists(STATE_FILE):
+        os.remove(STATE_FILE)
     state = load_state()
     while True:
         prompt = state["current_input"]
