@@ -8,7 +8,7 @@ import tempfile
 import re
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
-from duckduckgo_search import ddg_search
+from duckduckgo_search import DDGS
 
 # Configuration
 MODEL_NAME = "microsoft/Phi-4-reasoning-plus"
@@ -54,7 +54,8 @@ def run_code(code):
 
 def run_search(query):
     try:
-        results = ddg_search(query, max_results=5)
+        with DDGS() as ddgs:
+            results = ddgs.text(query, region="wt-wt", safesearch="Off", timelimit="y", max_results=5)
         if not results:
             return "[No results found]"
         summary = "\n".join(f"{r['title']}: {r['body']}" for r in results)
