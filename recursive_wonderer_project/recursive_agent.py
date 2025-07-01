@@ -10,11 +10,14 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 import argparse
 from duckduckgo_search import DDGS
+import os
 
 # Configuration
 MODEL_NAME = "microsoft/Phi-4-reasoning-plus"
 STATE_FILE = "agent_state.json"
 LOG_FILE = "thought_log.jsonl"
+
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
 SHORT_MEMORY_TURNS = 5
 HISTORY_LIMIT = 10

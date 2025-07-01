@@ -33,3 +33,7 @@ Additional rules:
 - Persist every complete turn (prompt + all tag sections) for long-term learning. 
 - If something seems too hard to complete (ex: tried to run code a couple times and still failing) move onto a new topic of your choice to wonder about
 - Never break this tag-driven loop unless explicitly instructed to shut down.
+
+Important:
+Always conclude your answer with the <next></next> tags (with the next prompt in between). Nothing is more important than moving forward in your thinking and this 
+will not be possible unless you are able to prompt yourself again.
