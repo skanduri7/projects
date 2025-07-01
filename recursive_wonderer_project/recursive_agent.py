@@ -86,13 +86,33 @@ def summarize_memory(turns: list[str]) -> str:
 
 
 def ask_model(prompt_text):
+    # 1) Build the chat messages
     messages = [
-        {"role": "system", "content": SYSTEM_PROMPT},
-        {"role": "user", "content": prompt_text}
+        {"role": "system",  "content": SYSTEM_PROMPT},
+        {"role": "user",    "content": prompt_text}
     ]
-    input_ids = tokenizer.apply_chat_template(messages, return_tensors="pt").to(model.device)
-    outputs = model.generate(input_ids, max_new_tokens=768, temperature=0.9, top_p=0.9, do_sample=True)
+
+    # 2) Apply the chat template *once* to get properly-formatted input_ids
+    chat_inputs = tokenizer.apply_chat_template(
+        messages,
+        return_tensors="pt",
+        padding=True,
+        truncation=True,
+    ).to(model.device)
+
+    # 3) Generate directly from those inputs
+    outputs = model.generate(
+        **chat_inputs,
+        max_new_tokens=256,      # shorter tail ensures the <next> tag survives
+        temperature=0.9,
+        top_p=0.9,
+        do_sample=True,
+        pad_token_id=tokenizer.eos_token_id,
+    )
+
+    # 4) Decode and return
     return tokenizer.decode(outputs[0], skip_special_tokens=True)
+
 
 def main():
     parser = argparse.ArgumentParser()
