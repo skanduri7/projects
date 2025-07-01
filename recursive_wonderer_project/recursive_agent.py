@@ -80,9 +80,13 @@ def summarize_memory(turns: list[str]) -> str:
     return ask_model(prompt)
 
 
-def ask_model(prompt):
-    inputs = tokenizer(SYSTEM_PROMPT + f"<|im_start|>user\n{prompt}\n<|im_end|>", return_tensors="pt").to(model.device)
-    outputs = model.generate(**inputs, max_new_tokens=512, temperature=0.9, top_p=0.9, do_sample=True)
+def ask_model(prompt_text):
+    messages = [
+        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "user", "content": prompt_text}
+    ]
+    input_ids = tokenizer.apply_chat_template(messages, return_tensors="pt").to(model.device)
+    outputs = model.generate(input_ids, max_new_tokens=1024, temperature=0.9, top_p=0.9, do_sample=True)
     return tokenizer.decode(outputs[0], skip_special_tokens=True)
 
 def main():
