@@ -8,7 +8,7 @@ import tempfile
 import re
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
-from duckduckgo_search import ddg  # pip install duckduckgo_search
+from duckduckgo_search import ddg_search
 
 # Configuration
 MODEL_NAME = "microsoft/Phi-4-reasoning-plus"
@@ -54,13 +54,14 @@ def run_code(code):
 
 def run_search(query):
     try:
-        results = ddg(query, max_results=5)
+        results = ddg_search(query, max_results=5)
         if not results:
             return "[No results found]"
         summary = "\n".join(f"{r['title']}: {r['body']}" for r in results)
         return summary
     except Exception as e:
         return f"[Error performing search: {e}]"
+
 
 def ask_model(prompt):
     inputs = tokenizer(SYSTEM_PROMPT + f"<|im_start|>user\n{prompt}\n<|im_end|>", return_tensors="pt").to(model.device)
